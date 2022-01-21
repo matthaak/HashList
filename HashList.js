@@ -1,3 +1,5 @@
+// See https://github.com/matthaak/HashList/ for documentation
+
 var HashList = Class.create();
 HashList.prototype = {
 	
