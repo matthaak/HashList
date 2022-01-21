@@ -25,6 +25,13 @@ Copy HashList.js into a global or scoped Script Include. Make sure the Script In
     gr.get('number', 'INC0000001');
     new HashList(gr.watch_list).remove('6816f79cc0a8016401c5a33be04be441');
     gr.update();
+    
+    // Create a stand-alone HashList and do stuff to it
+    var hl = new HashList('a;  b; c;   b', ';');
+    hl.add('d');
+    hl.add('d');
+    hl.remove('a');
+    gs.info(hl.toString()); // prints b;c;d
 
 ## Constructors
 
