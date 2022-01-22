@@ -41,7 +41,7 @@ Constructs an empty HashList unbound to any Glide List field and variable.
 
     new HashList(glideElement);
     
-Constructs an empty HashList bound to the given Glide List field or variable () and populated with its current value.
+Constructs a HashList bound to the given Glide List field or variable () and populated with its current value.
 
     new HashList(string);
 
