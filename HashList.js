@@ -35,6 +35,18 @@ HashList.prototype = {
 		this._setGE();
 		return true;
 	},
+
+	addAll: function(hashList) {
+	    var me = this;
+	    var amModified = false;
+	    hashList._arr.forEach(function(val) {
+		if (!me.contains(val)) {
+		    me.add(val);
+		    amModified = true;
+		}
+	    });
+	    return amModified;
+	},
 	
 	clear : function() {
 		this._arr = [];
